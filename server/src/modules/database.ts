@@ -52,6 +52,10 @@ export default class Database {
         return data.data;
     }
 
+    readAll(){
+        return this.db
+    }
+
 
     async update(key: string, update: any) {
         let data = this.db.find((e) => e.key === key);
